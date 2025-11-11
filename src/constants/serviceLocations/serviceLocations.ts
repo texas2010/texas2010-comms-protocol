@@ -6,5 +6,5 @@ export const ServiceLocations = Object.fromEntries(
   [K in keyof typeof ServiceLocationList]: `service.${(typeof ServiceLocationList)[K]}`;
 };
 
-export type ServiceName =
+export type ServiceLocations =
   (typeof ServiceLocations)[keyof typeof ServiceLocations];
